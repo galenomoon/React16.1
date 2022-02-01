@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Saudacao from "./components/Saudacao";
+import Filho from "./components/Filho";
+import Pai from "./components/Pai.";
+
+// import Saudacao from "./components/Saudacao";
 // import BomDia from "./components/BomDia";
 // import {BoaTarde, BoaNoite} from './components/Multiplos'
 
@@ -8,7 +11,12 @@ import Saudacao from "./components/Saudacao";
 ReactDOM.render(
   //JSX
   <div>
-      <Saudacao tipo="Bom dia" nome="joão"/>
+      <Pai nome='Paulo' sobrenome='Silva'>
+          <Filho nome='Pedro' sobrenome='silva'/>
+          <Filho nome='Paulo' sobrenome='silva'/>
+          <Filho nome='Carla' sobrenome='silva'/>
+          </Pai>
+      {/* <Saudacao tipo="Bom dia" nome="joão"/> */}
     {/* <BomDia name="Galeno" /> */}
     {/* <BoaTarde name="Gusta" /> */}
     {/* <BoaNoite name="Luana" /> */}
